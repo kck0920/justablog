@@ -1,0 +1,755 @@
+{
+  "category": "culture",
+  "quizzes": [
+    {
+      "id": "culture_001",
+      "subcategory": "미술",
+      "difficulty": "medium",
+      "question": "레오나르도 다빈치의 '모나리자'가 전시되어 있는 박물관은?",
+      "options": [
+        "대영박물관",
+        "루브르 박물관",
+        "메트로폴리탄 미술관",
+        "우피치 미술관"
+      ],
+      "correctAnswer": 1,
+      "explanation": "모나리자는 프랑스 파리의 루브르 박물관에 전시되어 있습니다. 이 작품은 세계에서 가장 유명한 회화 작품 중 하나입니다.",
+      "tags": ["미술", "회화", "박물관"]
+    },
+    {
+      "id": "culture_002",
+      "subcategory": "음악",
+      "difficulty": "easy",
+      "question": "베토벤의 마지막 교향곡은 몇 번인가요?",
+      "options": [
+        "7번",
+        "8번",
+        "9번",
+        "10번"
+      ],
+      "correctAnswer": 2,
+      "explanation": "베토벤의 마지막 교향곡은 9번 '합창'입니다. 이 곡은 실러의 시 '환희의 송가'를 바탕으로 한 합창이 포함된 혁신적인 작품입니다.",
+      "tags": ["음악", "클래식", "교향곡"]
+    },
+    {
+      "id": "culture_003",
+      "subcategory": "문학",
+      "difficulty": "medium",
+      "question": "'노인과 바다'를 쓴 작가는?",
+      "options": [
+        "어니스트 헤밍웨이",
+        "마크 트웨인",
+        "찰스 디킨스",
+        "F. 스콧 피츠제럴드"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'노인과 바다'는 어니스트 헤밍웨이의 대표작으로, 1954년 노벨문학상 수상의 주요 근거가 된 작품입니다.",
+      "tags": ["문학", "소설", "노벨상"]
+    },
+    {
+      "id": "culture_004",
+      "subcategory": "무용",
+      "difficulty": "hard",
+      "question": "차이코프스키의 3대 발레 작품이 아닌 것은?",
+      "options": [
+        "호두까기 인형",
+        "백조의 호수",
+        "지젤",
+        "잠자는 숲속의 미녀"
+      ],
+      "correctAnswer": 2,
+      "explanation": "지젤은 아돌프 아당의 작품이며, 차이코프스키의 3대 발레는 '호두까기 인형', '백조의 호수', '잠자는 숲속의 미녀'입니다.",
+      "tags": ["무용", "발레", "클래식"]
+    },
+    {
+      "id": "culture_005",
+      "subcategory": "건축",
+      "difficulty": "medium",
+      "question": "바르셀로나의 상징적인 건축물 '사그라다 파밀리아'를 설계한 건축가는?",
+      "options": [
+        "프랭크 게리",
+        "안토니 가우디",
+        "르 코르뷔지에",
+        "미스 반 데어 로에"
+      ],
+      "correctAnswer": 1,
+      "explanation": "사그라다 파밀리아는 스페인의 건축가 안토니 가우디가 설계한 성당으로, 1882년부터 시작되어 현재도 공사가 진행 중입니다.",
+      "tags": ["건축", "성당", "스페인"]
+    },
+    {
+      "id": "culture_006",
+      "subcategory": "영화",
+      "difficulty": "medium",
+      "question": "최초로 아카데미 작품상을 수상한 한국 영화는?",
+      "options": [
+        "올드보이",
+        "기생충",
+        "국제시장",
+        "명량"
+      ],
+      "correctAnswer": 1,
+      "explanation": "봉준호 감독의 '기생충'은 2020년 아카데미 시상식에서 작품상, 감독상 등 4관왕을 달성하며 한국 영화 최초로 작품상을 수상했습니다.",
+      "tags": ["영화", "아카데미", "한국영화"]
+    },
+    {
+      "id": "culture_007",
+      "subcategory": "미술",
+      "difficulty": "hard",
+      "question": "추상표현주의를 대표하는 화가 잭슨 폴록의 대표적인 기법은?",
+      "options": [
+        "점묘법",
+        "드리핑",
+        "콜라주",
+        "프레스코"
+      ],
+      "correctAnswer": 1,
+      "explanation": "잭슨 폴록은 캔버스를 바닥에 놓고 그 위에서 물감을 흘리고 뿌리는 드리핑(Dripping) 기법으로 유명합니다.",
+      "tags": ["미술", "현대미술", "기법"]
+    },
+    {
+      "id": "culture_008",
+      "subcategory": "음악",
+      "difficulty": "medium",
+      "question": "다음 중 빅뱅의 데뷔 곡은?",
+      "options": [
+        "거짓말",
+        "하루하루",
+        "라라라",
+        "우리 사랑하지 말아요"
+      ],
+      "correctAnswer": 2,
+      "explanation": "빅뱅은 2006년 '라라라'로 데뷔했으며, 이후 'MADE' 앨범까지 수많은 히트곡을 발표했습니다.",
+      "tags": ["음악", "K-POP", "아이돌"]
+    },
+    {
+      "id": "culture_009",
+      "subcategory": "문학",
+      "difficulty": "medium",
+      "question": "'삼국유사'를 편찬한 승려는?",
+      "options": [
+        "일연",
+        "의천",
+        "원효",
+        "혜초"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'삼국유사'는 고려 후기의 승려 일연이 편찬한 역사서로, 한국의 고대 설화와 민간 전승을 담고 있습니다.",
+      "tags": ["문학", "역사", "한국문학"]
+    },
+    {
+      "id": "culture_010",
+      "subcategory": "연극",
+      "difficulty": "hard",
+      "question": "셰익스피어의 4대 비극에 포함되지 않는 작품은?",
+      "options": [
+        "햄릿",
+        "맥베스",
+        "리어왕",
+        "로미오와 줄리엣"
+      ],
+      "correctAnswer": 3,
+      "explanation": "셰익스피어의 4대 비극은 '햄릿', '맥베스', '리어왕', '오셀로'입니다. '로미오와 줄리엣'은 비극이지만 4대 비극에 포함되지 않습니다.",
+      "tags": ["연극", "셰익스피어", "비극"]
+    },
+    {
+      "id": "culture_011",
+      "subcategory": "미술",
+      "difficulty": "medium",
+      "question": "고흐의 대표작 '별이 빛나는 밤'이 전시된 미술관은?",
+      "options": [
+        "루브르 박물관",
+        "반 고흐 미술관",
+        "현대미술관(MoMA)",
+        "오르세 미술관"
+      ],
+      "correctAnswer": 2,
+      "explanation": "'별이 빛나는 밤'은 뉴욕 현대미술관(MoMA)에 전시되어 있으며, 고흐의 가장 유명한 작품 중 하나입니다.",
+      "tags": ["미술", "회화", "미술관"]
+    },
+    {
+      "id": "culture_012",
+      "subcategory": "음악",
+      "difficulty": "easy",
+      "question": "방탄소년단(BTS)의 소속사는?",
+      "options": [
+        "SM 엔터테인먼트",
+        "JYP 엔터테인먼트",
+        "YG 엔터테인먼트",
+        "HYBE"
+      ],
+      "correctAnswer": 3,
+      "explanation": "방탄소년단은 HYBE(구 빅히트 엔터테인먼트) 소속으로, 글로벌 K-POP을 이끄는 대표적인 그룹입니다.",
+      "tags": ["음악", "K-POP", "엔터테인먼트"]
+    },
+    {
+      "id": "culture_013",
+      "subcategory": "문학",
+      "difficulty": "medium",
+      "question": "'토지'의 작가는?",
+      "options": [
+        "박경리",
+        "황순원",
+        "김동리",
+        "이문열"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'토지'는 박경리 작가의 대하소설로, 한국 근현대사를 배경으로 한 작품입니다. 1969년부터 1994년까지 집필되었습니다.",
+      "tags": ["문학", "소설", "한국문학"]
+    },
+    {
+      "id": "culture_014",
+      "subcategory": "건축",
+      "difficulty": "medium",
+      "question": "다음 중 고딕 양식의 특징이 아닌 것은?",
+      "options": [
+        "첨탑",
+        "아치",
+        "평평한 천장",
+        "스테인드글라스"
+      ],
+      "correctAnswer": 2,
+      "explanation": "고딕 건축의 특징은 뾰족한 첨탑, 높은 천장, 아치형 구조, 스테인드글라스 등입니다. 평평한 천장은 로마네스크 양식의 특징입니다.",
+      "tags": ["건축", "양식", "중세"]
+    },
+    {
+      "id": "culture_015",
+      "subcategory": "영화",
+      "difficulty": "medium",
+      "question": "봉준호 감독의 첫 장편영화는?",
+      "options": [
+        "살인의 추억",
+        "괴물",
+        "마더",
+        "플란다스의 개"
+      ],
+      "correctAnswer": 3,
+      "explanation": "봉준호 감독의 첫 장편영화는 2000년 개봉한 '플란다스의 개'입니다. 이후 '살인의 추억', '괴물' 등을 연출했습니다.",
+      "tags": ["영화", "한국영화", "감독"]
+    },
+    {
+      "id": "culture_016",
+      "subcategory": "무용",
+      "difficulty": "hard",
+      "question": "한국의 전통 춤 중 '승무'를 완성한 무용가는?",
+      "options": [
+        "최승희",
+        "한영숙",
+        "이매방",
+        "김백봉"
+      ],
+      "correctAnswer": 1,
+      "explanation": "승무는 한영숙 선생이 완성한 한국 전통춤의 대표작으로, 중요무형문화재 제27호로 지정되어 있습니다.",
+      "tags": ["무용", "전통춤", "한국문화"]
+    },
+    {
+      "id": "culture_017",
+      "subcategory": "미술",
+      "difficulty": "medium",
+      "question": "팝아트의 대표적인 작가는?",
+      "options": [
+        "앤디 워홀",
+        "클로드 모네",
+        "파블로 피카소",
+        "살바도르 달리"
+      ],
+      "correctAnswer": 0,
+      "explanation": "앤디 워홀은 팝아트를 대표하는 작가로, 캠벨 수프 캔, 마릴린 먼로 초상화 등 대중문화를 예술로 승화시킨 작품들로 유명합니다.",
+      "tags": ["미술", "현대미술", "팝아트"]
+    },
+    {
+      "id": "culture_018",
+      "subcategory": "음악",
+      "difficulty": "medium",
+      "question": "판소리의 다섯 마당에 포함되지 않는 것은?",
+      "options": [
+        "춘향가",
+        "심청가",
+        "흥부가",
+        "장화홍련전"
+      ],
+      "correctAnswer": 3,
+      "explanation": "판소리 다섯 마당은 춘향가, 심청가, 흥부가, 수궁가, 적벽가입니다. 장화홍련전은 판소리 다섯 마당에 포함되지 않습니다.",
+      "tags": ["음악", "전통음악", "판소리"]
+    },
+    {
+      "id": "culture_019",
+      "subcategory": "문학",
+      "difficulty": "hard",
+      "question": "'변신'을 쓴 작가는?",
+      "options": [
+        "프란츠 카프카",
+        "알베르 카뮈",
+        "장 폴 사르트르",
+        "헤르만 헤세"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'변신'은 프란츠 카프카의 대표작으로, 주인공이 어느 날 아침 벌레로 변해 있는 것을 발견하는 이야기를 다룹니다.",
+      "tags": ["문학", "소설", "실존주의"]
+    },
+    {
+      "id": "culture_020",
+      "subcategory": "영화",
+      "difficulty": "medium",
+      "question": "다음 중 이창동 감독의 작품이 아닌 것은?",
+      "options": [
+        "밀양",
+        "시",
+        "버닝",
+        "올드보이"
+      ],
+      "correctAnswer": 3,
+      "explanation": "'올드보이'는 박찬욱 감독의 작품입니다. 이창동 감독은 '밀양', '시', '버닝' 등을 연출했습니다.",
+      "tags": ["영화", "한국영화", "감독"]
+    },
+    {
+      "id": "culture_021",
+      "subcategory": "건축",
+      "difficulty": "medium",
+      "question": "경복궁의 정문은?",
+      "options": [
+        "광화문",
+        "돈화문",
+        "흥인지문",
+        "숭례문"
+      ],
+      "correctAnswer": 0,
+      "explanation": "광화문은 조선의 법궁인 경복궁의 정문으로, '밝은 빛이 나라를 비춘다'는 의미를 담고 있습니다.",
+      "tags": ["건축", "한국건축", "궁궐"]
+    },
+    {
+      "id": "culture_022",
+      "subcategory": "미술",
+      "difficulty": "hard",
+      "question": "신사실파의 대표 작가가 아닌 사람은?",
+      "options": [
+        "이중섭",
+        "장욱진",
+        "백남준",
+        "유영국"
+      ],
+      "correctAnswer": 2,
+      "explanation": "백남준은 비디오 아트의 선구자로, 신사실파와는 관련이 없습니다. 이중섭, 장욱진, 유영국은 신사실파를 대표하는 작가들입니다.",
+      "tags": ["미술", "한국미술", "현대미술"]
+    },
+    {
+      "id": "culture_023",
+      "subcategory": "음악",
+      "difficulty": "medium",
+      "question": "국악기 중 '우리나라의 피아노'라고 불리는 악기는?",
+      "options": [
+        "가야금",
+        "거문고",
+        "해금",
+        "대금"
+      ],
+      "correctAnswer": 0,
+      "explanation": "가야금은 12현의 현악기로, 다양한 음색과 풍부한 표현력으로 '우리나라의 피아노'라고 불립니다.",
+      "tags": ["음악", "국악", "악기"]
+    },
+    {
+      "id": "culture_024",
+      "subcategory": "연극",
+      "difficulty": "medium",
+      "question": "브레히트가 창시한 연극 기법은?",
+      "options": [
+        "서사극",
+        "부조리극",
+        "사실주의극",
+        "표현주의극"
+      ],
+      "correctAnswer": 0,
+      "explanation": "브레히트는 관객이 극에 감정이입하지 않고 비판적 거리를 유지하며 볼 수 있도록 하는 서사극 기법을 창시했습니다.",
+      "tags": ["연극", "현대연극", "기법"]
+    },
+    {
+      "id": "culture_025",
+      "subcategory": "문학",
+      "difficulty": "medium",
+      "question": "'님의 침묵'을 쓴 시인은?",
+      "options": [
+        "한용운",
+        "윤동주",
+        "김소월",
+        "정지용"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'님의 침묵'은 한용운의 대표작으로, 불교 승려이자 독립운동가였던 그의 민족의식과 사랑을 함께 담아낸 작품입니다.",
+      "tags": ["문학", "시", "한국문학"]
+    },
+    {
+      "id": "culture_026",
+      "subcategory": "미술",
+      "difficulty": "medium",
+      "question": "한국의 전통 회화에서 '문인화'의 주요 소재로 불리는 '사군자'가 아닌 것은?",
+      "options": [
+        "매화",
+        "난초",
+        "국화",
+        "연꽃"
+      ],
+      "correctAnswer": 3,
+      "explanation": "사군자는 매화, 난초, 국화, 대나무를 의미합니다. 연꽃은 사군자에 포함되지 않으며, 불교 미술의 주요 소재입니다.",
+      "tags": ["미술", "한국화", "전통미술"]
+    },
+    {
+      "id": "culture_027",
+      "subcategory": "음악",
+      "difficulty": "hard",
+      "question": "다음 중 '인상주의' 음악의 대표적인 작곡가는?",
+      "options": [
+        "드뷔시",
+        "바흐",
+        "모차르트",
+        "쇼팽"
+      ],
+      "correctAnswer": 0,
+      "explanation": "클로드 드뷔시는 인상주의 음악의 대표적인 작곡가로, '달빛', '바다' 등의 작품을 통해 음악적 인상주의를 확립했습니다.",
+      "tags": ["음악", "클래식", "인상주의"]
+    },
+    {
+      "id": "culture_028",
+      "subcategory": "건축",
+      "difficulty": "medium",
+      "question": "다음 중 한국의 국보 1호는?",
+      "options": [
+        "석굴암",
+        "불국사",
+        "숭례문",
+        "다보탑"
+      ],
+      "correctAnswer": 2,
+      "explanation": "숭례문(남대문)은 대한민국의 국보 제1호로 지정된 조선시대의 성문입니다. 2008년 화재로 소실되었다가 2013년 복원되었습니다.",
+      "tags": ["건축", "문화재", "한국건축"]
+    },
+    {
+      "id": "culture_029",
+      "subcategory": "영화",
+      "difficulty": "medium",
+      "question": "세계 최초의 영화를 만든 사람은?",
+      "options": [
+        "토마스 에디슨",
+        "뤼미에르 형제",
+        "조르주 멜리에스",
+        "찰리 채플린"
+      ],
+      "correctAnswer": 1,
+      "explanation": "뤼미에르 형제는 1895년 '공장을 나서는 노동자들'이라는 최초의 영화를 상영했습니다.",
+      "tags": ["영화", "영화사", "발명"]
+    },
+    {
+      "id": "culture_030",
+      "subcategory": "무용",
+      "difficulty": "hard",
+      "question": "현대무용의 어머니로 불리는 무용가는?",
+      "options": [
+        "이사도라 던컨",
+        "마사 그레이엄",
+        "피나 바우쉬",
+        "안나 파블로바"
+      ],
+      "correctAnswer": 0,
+      "explanation": "이사도라 던컨은 고전 발레의 형식에서 벗어나 자유로운 표현을 추구한 현대무용의 선구자입니다.",
+      "tags": ["무용", "현대무용", "무용사"]
+    },
+    {
+      "id": "culture_031",
+      "subcategory": "문학",
+      "difficulty": "medium",
+      "question": "한국 최초의 현대소설로 평가받는 작품은?",
+      "options": [
+        "무정",
+        "만세전",
+        "흙",
+        "상록수"
+      ],
+      "correctAnswer": 0,
+      "explanation": "이광수의 '무정'(1917)은 한국 최초의 현대장편소설로 평가받으며, 계몽주의적 성격을 띤 작품입니다.",
+      "tags": ["문학", "한국문학", "소설"]
+    },
+    {
+      "id": "culture_032",
+      "subcategory": "미술",
+      "difficulty": "medium",
+      "question": "다음 중 초현실주의 화가가 아닌 사람은?",
+      "options": [
+        "살바도르 달리",
+        "르네 마그리트",
+        "클로드 모네",
+        "막스 에른스트"
+      ],
+      "correctAnswer": 2,
+      "explanation": "클로드 모네는 인상주의를 대표하는 화가입니다. 나머지는 모두 초현실주의를 대표하는 화가들입니다.",
+      "tags": ["미술", "화가", "미술사"]
+    },
+    {
+      "id": "culture_033",
+      "subcategory": "음악",
+      "difficulty": "hard",
+      "question": "다음 중 국악의 장단이 아닌 것은?",
+      "options": [
+        "중모리",
+        "자진모리",
+        "굿거리",
+        "알레그로"
+      ],
+      "correctAnswer": 3,
+      "explanation": "알레그로는 서양 음악의 빠르기말로, 나머지는 모두 한국 전통 음악의 장단입니다.",
+      "tags": ["음악", "국악", "장단"]
+    },
+    {
+      "id": "culture_034",
+      "subcategory": "건축",
+      "difficulty": "medium",
+      "question": "르 코르뷔지에가 주장한 현대 건축의 5원칙에 포함되지 않는 것은?",
+      "options": [
+        "필로티",
+        "자유로운 평면",
+        "수직 동선",
+        "자유로운 입면"
+      ],
+      "correctAnswer": 2,
+      "explanation": "르 코르뷔지에의 현대 건축 5원칙은 필로티, 자유로운 평면, 자유로운 입면, 수평창, 옥상정원입니다.",
+      "tags": ["건축", "현대건축", "건축이론"]
+    },
+    {
+      "id": "culture_035",
+      "subcategory": "영화",
+      "difficulty": "medium",
+      "question": "다음 중 '누벨바그' 영화 운동의 감독이 아닌 사람은?",
+      "options": [
+        "장-뤽 고다르",
+        "프랑수아 트뤼포",
+        "알프레드 히치콕",
+        "에릭 로메르"
+      ],
+      "correctAnswer": 2,
+      "explanation": "알프레드 히치콕은 누벨바그 운동의 감독이 아닌, 서스펜스의 대가로 불리는 할리우드의 거장입니다.",
+      "tags": ["영화", "영화사", "누벨바그"]
+    },
+    {
+      "id": "culture_036",
+      "subcategory": "문학",
+      "difficulty": "hard",
+      "question": "'오디세이아'를 쓴 고대 그리스의 시인은?",
+      "options": [
+        "호메로스",
+        "소포클레스",
+        "에우리피데스",
+        "아리스토파네스"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'오디세이아'는 호메로스의 대표작으로, 트로이 전쟁 영웅 오디세우스의 귀향 여정을 다룬 서사시입니다.",
+      "tags": ["문학", "고전", "서사시"]
+    },
+    {
+      "id": "culture_037",
+      "subcategory": "미술",
+      "difficulty": "medium",
+      "question": "다음 중 '청자'를 대표하는 고려의 도자기가 아닌 것은?",
+      "options": [
+        "상감청자",
+        "진사청자",
+        "분청사기",
+        "비취청자"
+      ],
+      "correctAnswer": 2,
+      "explanation": "분청사기는 조선시대의 도자기로, 고려의 청자와는 다른 시대의 도자기입니다.",
+      "tags": ["미술", "도자기", "한국미술"]
+    },
+    {
+      "id": "culture_038",
+      "subcategory": "음악",
+      "difficulty": "medium",
+      "question": "다음 중 모차르트의 오페라가 아닌 것은?",
+      "options": [
+        "마술피리",
+        "피가로의 결혼",
+        "돈 조반니",
+        "카르멘"
+      ],
+      "correctAnswer": 3,
+      "explanation": "'카르멘'은 비제의 오페라입니다. 나머지는 모두 모차르트의 대표적인 오페라 작품들입니다.",
+      "tags": ["음악", "오페라", "클래식"]
+    },
+    {
+      "id": "culture_039",
+      "subcategory": "건축",
+      "difficulty": "hard",
+      "question": "다음 중 포스트모더니즘 건축의 특징이 아닌 것은?",
+      "options": [
+        "역사적 요소의 차용",
+        "장식성",
+        "기능성 중시",
+        "다원주의"
+      ],
+      "correctAnswer": 2,
+      "explanation": "기능성 중시는 모더니즘 건축의 특징이며, 포스트모더니즘은 장식성과 다원주의적 성격을 강조합니다.",
+      "tags": ["건축", "건축사", "포스트모더니즘"]
+    },
+    {
+      "id": "culture_040",
+      "subcategory": "무용",
+      "difficulty": "medium",
+      "question": "한국의 전통춤 중 '태평무'를 창작한 무용가는?",
+      "options": [
+        "한성준",
+        "한영숙",
+        "이매방",
+        "강선영"
+      ],
+      "correctAnswer": 1,
+      "explanation": "태평무는 한영숙이 창작한 춤으로, 조선 궁중무용을 기반으로 한 작품입니다.",
+      "tags": ["무용", "한국무용", "전통춤"]
+    },
+    {
+      "id": "culture_041",
+      "subcategory": "미술",
+      "difficulty": "medium",
+      "question": "다음 중 '입체파' 화가가 아닌 사람은?",
+      "options": [
+        "파블로 피카소",
+        "조르주 브라크",
+        "앙리 마티스",
+        "후안 그리스"
+      ],
+      "correctAnswer": 2,
+      "explanation": "앙리 마티스는 야수파를 대표하는 화가입니다. 나머지는 모두 입체파를 대표하는 화가들입니다.",
+      "tags": ["미술", "현대미술", "화파"]
+    },
+    {
+      "id": "culture_042",
+      "subcategory": "음악",
+      "difficulty": "hard",
+      "question": "다음 중 '12음 기법'을 창안한 작곡가는?",
+      "options": [
+        "쇤베르크",
+        "스트라빈스키",
+        "베베른",
+        "베르크"
+      ],
+      "correctAnswer": 0,
+      "explanation": "아놀드 쇤베르크는 12음 기법을 창안한 작곡가로, 현대 음악의 혁신적인 작곡 기법을 발전시켰습니다.",
+      "tags": ["음악", "현대음악", "작곡기법"]
+    },
+    {
+      "id": "culture_043",
+      "subcategory": "문학",
+      "difficulty": "medium",
+      "question": "'해리 포터' 시리즈의 작가는?",
+      "options": [
+        "J.K. 롤링",
+        "C.S. 루이스",
+        "J.R.R. 톨킨",
+        "필립 풀먼"
+      ],
+      "correctAnswer": 0,
+      "explanation": "J.K. 롤링은 '해리 포터' 시리즈의 작가로, 전 세계적으로 큰 성공을 거둔 판타지 소설을 창작했습니다.",
+      "tags": ["문학", "판타지", "현대문학"]
+    },
+    {
+      "id": "culture_044",
+      "subcategory": "영화",
+      "difficulty": "medium",
+      "question": "다음 중 '프랑스 누벨바그'의 특징이 아닌 것은?",
+      "options": [
+        "즉흥적인 연출",
+        "작가주의",
+        "할리우드식 스튜디오 촬영",
+        "일상적인 소재"
+      ],
+      "correctAnswer": 2,
+      "explanation": "누벨바그는 스튜디오 촬영을 지양하고 실제 로케이션 촬영을 선호했으며, 자유로운 카메라 워크를 특징으로 합니다.",
+      "tags": ["영화", "영화사", "누벨바그"]
+    },
+    {
+      "id": "culture_045",
+      "subcategory": "건축",
+      "difficulty": "medium",
+      "question": "다음 중 한국 전통 건축의 기둥 배치 방식은?",
+      "options": [
+        "주심포식",
+        "다포식",
+        "익공식",
+        "이상 모두"
+      ],
+      "correctAnswer": 3,
+      "explanation": "주심포식, 다포식, 익공식은 모두 한국 전통 건축에서 사용된 기둥 배치 방식입니다.",
+      "tags": ["건축", "한국건축", "전통건축"]
+    },
+    {
+      "id": "culture_046",
+      "subcategory": "미술",
+      "difficulty": "hard",
+      "question": "다음 중 '바우하우스'의 교장을 역임하지 않은 사람은?",
+      "options": [
+        "발터 그로피우스",
+        "한스 마이어",
+        "미스 반 데어 로에",
+        "르 코르뷔지에"
+      ],
+      "correctAnswer": 3,
+      "explanation": "르 코르뷔지에는 바우하우스의 교장을 역임하지 않았습니다. 나머지는 모두 바우하우스의 교장을 역임했습니다.",
+      "tags": ["미술", "디자인", "교육"]
+    },
+    {
+      "id": "culture_047",
+      "subcategory": "음악",
+      "difficulty": "medium",
+      "question": "다음 중 한국의 전통 악기가 아닌 것은?",
+      "options": [
+        "가야금",
+        "해금",
+        "샤미센",
+        "피리"
+      ],
+      "correctAnswer": 2,
+      "explanation": "샤미센은 일본의 전통 악기입니다. 나머지는 모두 한국의 전통 악기입니다.",
+      "tags": ["음악", "전통악기", "국악"]
+    },
+    {
+      "id": "culture_048",
+      "subcategory": "문학",
+      "difficulty": "medium",
+      "question": "다음 중 '한글 창제의 원리'를 설명한 책은?",
+      "options": [
+        "훈민정음",
+        "동국정운",
+        "용비어천가",
+        "월인천강지곡"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'훈민정음'은 세종대왕이 한글을 창제한 원리를 설명한 책으로, 1446년에 간행되었습니다.",
+      "tags": ["문학", "한국문학", "한글"]
+    },
+    {
+      "id": "culture_049",
+      "subcategory": "영화",
+      "difficulty": "medium",
+      "question": "최초로 아카데미 감독상을 수상한 아시아 감독은?",
+      "options": [
+        "이안",
+        "봉준호",
+        "구로사와 아키라",
+        "왕가위"
+      ],
+      "correctAnswer": 0,
+      "explanation": "이안은 '브로크백 마운틴'으로 2006년 아카데미 감독상을 수상하며, 아시아 감독 최초로 이 상을 받았습니다.",
+      "tags": ["영화", "아카데미", "감독"]
+    },
+    {
+      "id": "culture_050",
+      "subcategory": "무용",
+      "difficulty": "hard",
+      "question": "다음 중 '모던 댄스'의 3대 개척자가 아닌 사람은?",
+      "options": [
+        "마사 그레이엄",
+        "도리스 험프리",
+        "루돌프 라반",
+        "미하일 바리시니코프"
+      ],
+      "correctAnswer": 3,
+      "explanation": "미하일 바리시니코프는 클래식 발레의 무용수입니다. 나머지는 모두 모던 댄스의 주요 개척자들입니다.",
+      "tags": ["무용", "현대무용", "무용사"]
+    }
+  ]
+} 

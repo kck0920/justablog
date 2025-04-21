@@ -1,0 +1,380 @@
+{
+  "category": "science",
+  "quizzes": [
+    {
+      "id": "science_001",
+      "subcategory": "물리",
+      "difficulty": "medium",
+      "question": "빛의 속도는 1초에 몇 km를 이동하나요?",
+      "options": [
+        "약 200,000km",
+        "약 300,000km",
+        "약 400,000km",
+        "약 500,000km"
+      ],
+      "correctAnswer": 1,
+      "explanation": "빛의 속도는 진공에서 약 300,000km/s입니다. 이는 우주에서 가장 빠른 속도이며, 아인슈타인의 상대성 이론에서 중요한 상수입니다.",
+      "tags": ["물리", "빛", "속도"]
+    },
+    {
+      "id": "science_002",
+      "subcategory": "화학",
+      "difficulty": "easy",
+      "question": "물의 화학식은?",
+      "options": [
+        "H2O2",
+        "H2O",
+        "CO2",
+        "O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "물의 화학식은 H2O로, 수소(H) 원자 2개와 산소(O) 원자 1개로 구성되어 있습니다.",
+      "tags": ["화학", "물", "화학식"]
+    },
+    {
+      "id": "science_003",
+      "subcategory": "생물",
+      "difficulty": "medium",
+      "question": "DNA의 이중나선 구조를 발견한 과학자는?",
+      "options": [
+        "아인슈타인",
+        "뉴턴",
+        "왓슨과 크릭",
+        "멘델"
+      ],
+      "correctAnswer": 2,
+      "explanation": "제임스 왓슨과 프랜시스 크릭은 1953년 DNA의 이중나선 구조를 발견했으며, 이 공로로 1962년 노벨상을 수상했습니다.",
+      "tags": ["생물", "DNA", "과학사"]
+    },
+    {
+      "id": "science_004",
+      "subcategory": "천문",
+      "difficulty": "hard",
+      "question": "태양계에서 가장 큰 행성은?",
+      "options": [
+        "화성",
+        "토성",
+        "목성",
+        "천왕성"
+      ],
+      "correctAnswer": 2,
+      "explanation": "목성은 태양계에서 가장 큰 행성으로, 지구 질량의 약 318배이며 태양계 전체 행성 질량의 약 70%를 차지합니다.",
+      "tags": ["천문", "행성", "태양계"]
+    },
+    {
+      "id": "science_005",
+      "subcategory": "지구과학",
+      "difficulty": "medium",
+      "question": "지구의 지각을 이루는 가장 흔한 원소는?",
+      "options": [
+        "산소",
+        "규소",
+        "알루미늄",
+        "철"
+      ],
+      "correctAnswer": 0,
+      "explanation": "지구 지각을 구성하는 원소 중 산소가 약 46.6%로 가장 많은 비중을 차지합니다. 그 다음으로 규소(27.7%)가 많습니다.",
+      "tags": ["지구과학", "지각", "원소"]
+    },
+    {
+      "id": "science_006",
+      "subcategory": "물리",
+      "difficulty": "medium",
+      "question": "소리가 전달되지 않는 곳은?",
+      "options": [
+        "물속",
+        "진공",
+        "공기 중",
+        "얼음 속"
+      ],
+      "correctAnswer": 1,
+      "explanation": "소리는 매질의 진동으로 전달되는 파동입니다. 진공에는 매질이 없으므로 소리가 전달될 수 없습니다.",
+      "tags": ["물리", "소리", "진공"]
+    },
+    {
+      "id": "science_007",
+      "subcategory": "화학",
+      "difficulty": "hard",
+      "question": "주기율표에서 가장 가벼운 비활성 기체는?",
+      "options": [
+        "네온",
+        "헬륨",
+        "아르곤",
+        "크립톤"
+      ],
+      "correctAnswer": 1,
+      "explanation": "헬륨(He)은 수소 다음으로 가벼운 원소이며, 비활성 기체 중에서는 가장 가벼운 원소입니다.",
+      "tags": ["화학", "원소", "비활성기체"]
+    },
+    {
+      "id": "science_008",
+      "subcategory": "생물",
+      "difficulty": "medium",
+      "question": "세포의 발전소라고 불리는 세포 소기관은?",
+      "options": [
+        "리보솜",
+        "미토콘드리아",
+        "골지체",
+        "소포체"
+      ],
+      "correctAnswer": 1,
+      "explanation": "미토콘드리아는 세포의 에너지 생산을 담당하는 세포 소기관으로, ATP를 생성하여 세포에 에너지를 공급합니다.",
+      "tags": ["생물", "세포", "미토콘드리아"]
+    },
+    {
+      "id": "science_009",
+      "subcategory": "천문",
+      "difficulty": "medium",
+      "question": "달의 공전 주기는?",
+      "options": [
+        "약 27일",
+        "약 29일",
+        "약 31일",
+        "약 33일"
+      ],
+      "correctAnswer": 0,
+      "explanation": "달의 공전 주기(항성월)는 약 27.3일입니다. 단, 음력 한 달(삭망월)은 약 29.5일로, 이는 지구와 달의 상대적 위치 변화 때문입니다.",
+      "tags": ["천문", "달", "공전"]
+    },
+    {
+      "id": "science_010",
+      "subcategory": "지구과학",
+      "difficulty": "easy",
+      "question": "지구의 대기 중 가장 많은 비율을 차지하는 기체는?",
+      "options": [
+        "산소",
+        "이산화탄소",
+        "질소",
+        "수소"
+      ],
+      "correctAnswer": 2,
+      "explanation": "지구 대기의 약 78%는 질소로 구성되어 있습니다. 산소는 약 21%를 차지합니다.",
+      "tags": ["지구과학", "대기", "기체"]
+    },
+    {
+      "id": "science_011",
+      "subcategory": "물리",
+      "difficulty": "hard",
+      "question": "양자역학의 불확정성 원리를 주장한 과학자는?",
+      "options": [
+        "아인슈타인",
+        "하이젠베르크",
+        "보어",
+        "슈뢰딩거"
+      ],
+      "correctAnswer": 1,
+      "explanation": "불확정성 원리는 베르너 하이젠베르크가 1927년에 발표했으며, 입자의 위치와 운동량을 동시에 정확하게 측정할 수 없다는 원리입니다.",
+      "tags": ["물리", "양자역학", "과학사"]
+    },
+    {
+      "id": "science_012",
+      "subcategory": "화학",
+      "difficulty": "medium",
+      "question": "pH 7은 어떤 성질을 나타내나요?",
+      "options": [
+        "강산성",
+        "약산성",
+        "중성",
+        "염기성"
+      ],
+      "correctAnswer": 2,
+      "explanation": "pH 7은 중성을 나타냅니다. pH가 7보다 작으면 산성, 7보다 크면 염기성입니다.",
+      "tags": ["화학", "pH", "산염기"]
+    },
+    {
+      "id": "science_013",
+      "subcategory": "생물",
+      "difficulty": "medium",
+      "question": "광합성에 필요하지 않은 것은?",
+      "options": [
+        "이산화탄소",
+        "물",
+        "산소",
+        "빛"
+      ],
+      "correctAnswer": 2,
+      "explanation": "광합성은 이산화탄소와 물을 원료로 하여 빛에너지를 이용해 포도당을 만드는 과정입니다. 산소는 광합성의 부산물입니다.",
+      "tags": ["생물", "광합성", "식물"]
+    },
+    {
+      "id": "science_014",
+      "subcategory": "천문",
+      "difficulty": "hard",
+      "question": "블랙홀의 경계면을 무엇이라고 하나요?",
+      "options": [
+        "사건의 지평선",
+        "특이점",
+        "중력렌즈",
+        "퀘이사"
+      ],
+      "correctAnswer": 0,
+      "explanation": "사건의 지평선은 블랙홀에서 빛조차 탈출할 수 없는 경계면을 의미합니다.",
+      "tags": ["천문", "블랙홀", "우주"]
+    },
+    {
+      "id": "science_015",
+      "subcategory": "지구과학",
+      "difficulty": "medium",
+      "question": "지진의 강도를 나타내는 척도는?",
+      "options": [
+        "켈빈",
+        "리히터",
+        "섭씨",
+        "화씨"
+      ],
+      "correctAnswer": 1,
+      "explanation": "리히터 척도는 지진의 규모를 나타내는 척도입니다. 숫자가 1 증가할 때마다 지진의 에너지는 약 32배 증가합니다.",
+      "tags": ["지구과학", "지진", "척도"]
+    },
+    {
+      "id": "science_016",
+      "subcategory": "물리",
+      "difficulty": "medium",
+      "question": "전자를 발견한 과학자는?",
+      "options": [
+        "톰슨",
+        "러더퍼드",
+        "보어",
+        "큐리"
+      ],
+      "correctAnswer": 0,
+      "explanation": "J.J. 톰슨은 1897년 음극선 실험을 통해 전자를 발견했으며, 이 공로로 1906년 노벨 물리학상을 수상했습니다.",
+      "tags": ["물리", "원자", "과학사"]
+    },
+    {
+      "id": "science_017",
+      "subcategory": "화학",
+      "difficulty": "hard",
+      "question": "원자번호가 가장 큰 자연 원소는?",
+      "options": [
+        "우라늄",
+        "플루토늄",
+        "라듐",
+        "토륨"
+      ],
+      "correctAnswer": 0,
+      "explanation": "우라늄(U)은 원자번호 92번으로, 자연에서 발견되는 가장 무거운 원소입니다.",
+      "tags": ["화학", "원소", "방사성"]
+    },
+    {
+      "id": "science_018",
+      "subcategory": "생물",
+      "difficulty": "medium",
+      "question": "인체에서 가장 큰 장기는?",
+      "options": [
+        "심장",
+        "폐",
+        "간",
+        "피부"
+      ],
+      "correctAnswer": 3,
+      "explanation": "피부는 인체에서 가장 큰 장기로, 성인의 경우 약 2제곱미터의 면적을 차지합니다.",
+      "tags": ["생물", "인체", "장기"]
+    },
+    {
+      "id": "science_019",
+      "subcategory": "천문",
+      "difficulty": "medium",
+      "question": "태양계에서 가장 뜨거운 행성은?",
+      "options": [
+        "수성",
+        "금성",
+        "화성",
+        "목성"
+      ],
+      "correctAnswer": 1,
+      "explanation": "금성은 평균 표면 온도가 약 462°C로, 태양계에서 가장 뜨거운 행성입니다. 이는 온실효과 때문입니다.",
+      "tags": ["천문", "행성", "온도"]
+    },
+    {
+      "id": "science_020",
+      "subcategory": "지구과학",
+      "difficulty": "easy",
+      "question": "지구의 자전 방향은?",
+      "options": [
+        "서에서 동",
+        "동에서 서",
+        "남에서 북",
+        "북에서 남"
+      ],
+      "correctAnswer": 0,
+      "explanation": "지구는 서쪽에서 동쪽으로 자전합니다. 이로 인해 태양이 동쪽에서 떠서 서쪽으로 지는 것처럼 보입니다.",
+      "tags": ["지구과학", "자전", "방향"]
+    },
+    {
+      "id": "science_021",
+      "subcategory": "물리",
+      "difficulty": "hard",
+      "question": "상대성이론에서 E=mc²의 E는 무엇을 의미하나요?",
+      "options": [
+        "전기",
+        "에너지",
+        "탄성",
+        "효율"
+      ],
+      "correctAnswer": 1,
+      "explanation": "아인슈타인의 질량-에너지 등가성 공식에서 E는 에너지를 의미합니다. 이 공식은 질량과 에너지가 서로 변환될 수 있음을 나타냅니다.",
+      "tags": ["물리", "상대성이론", "에너지"]
+    },
+    {
+      "id": "science_022",
+      "subcategory": "화학",
+      "difficulty": "medium",
+      "question": "물의 끓는점은 몇 도인가요? (1기압 기준)",
+      "options": [
+        "90°C",
+        "95°C",
+        "100°C",
+        "105°C"
+      ],
+      "correctAnswer": 2,
+      "explanation": "1기압에서 물의 끓는점은 100°C입니다. 이는 표준 끓는점이라고도 하며, 압력에 따라 변할 수 있습니다.",
+      "tags": ["화학", "물", "끓는점"]
+    },
+    {
+      "id": "science_023",
+      "subcategory": "생물",
+      "difficulty": "medium",
+      "question": "인체의 정상 체온은?",
+      "options": [
+        "35.5°C",
+        "36.5°C",
+        "37.5°C",
+        "38.5°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "인체의 정상 체온은 약 36.5°C입니다. 이는 체온 조절 중추인 시상하부에 의해 유지됩니다.",
+      "tags": ["생물", "체온", "인체"]
+    },
+    {
+      "id": "science_024",
+      "subcategory": "천문",
+      "difficulty": "hard",
+      "question": "우리 은하의 형태는?",
+      "options": [
+        "타원형",
+        "나선형",
+        "불규칙형",
+        "구형"
+      ],
+      "correctAnswer": 1,
+      "explanation": "우리 은하인 은하수는 막대 나선 은하로, 중심부에 막대 모양의 구조가 있는 나선 은하입니다.",
+      "tags": ["천문", "은하", "우주"]
+    },
+    {
+      "id": "science_025",
+      "subcategory": "지구과학",
+      "difficulty": "medium",
+      "question": "지구의 내핵은 주로 어떤 성분으로 이루어져 있나요?",
+      "options": [
+        "규산염",
+        "철과 니켈",
+        "마그마",
+        "화강암"
+      ],
+      "correctAnswer": 1,
+      "explanation": "지구의 내핵은 주로 철과 니켈로 이루어져 있으며, 매우 높은 온도와 압력 상태에서 고체 상태로 존재합니다.",
+      "tags": ["지구과학", "지구내부", "구성"]
+    }
+  ]
+} 
