@@ -22,11 +22,25 @@ export function Header() {
   const { isAuthenticated } = useAuth();
   const { handleLogout } = useAuthHelpers();
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleLinkClick = () => {
+    scrollToTop();
+    setMobileMenuOpen(false);
+  };
+
+  const handleLogoutClick = () => {
+    scrollToTop();
+    handleLogout();
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container-custom flex h-16 items-center justify-between">
         <div className="flex items-center gap-6 md:gap-10">
-          <Link to="/" className="font-heading text-2xl font-bold tracking-tight">
+          <Link to="/" className="font-heading text-2xl font-bold tracking-tight" onClick={scrollToTop}>
             Just A Blog
           </Link>
           
@@ -40,7 +54,7 @@ export function Header() {
                   asChild
                   className="rounded-full bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-orange-500/10 hover:from-purple-500/20 hover:via-pink-500/20 hover:to-orange-500/20 border-primary/20 hover:border-primary/30 font-medium transition-all duration-300 hover:scale-105 h-auto py-1 px-4 text-sm group"
                 >
-                  <Link to={category.href} className="flex items-center gap-1">
+                  <Link to={category.href} className="flex items-center gap-1" onClick={scrollToTop}>
                     <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 bg-clip-text text-transparent animate-pulse group-hover:animate-none">
                       ✨ {category.name}
                     </span>
@@ -50,6 +64,7 @@ export function Header() {
                 <Link 
                   key={category.name} 
                   to={category.href}
+                  onClick={scrollToTop}
                   className="text-sm font-medium transition-colors hover:text-primary relative after:absolute after:w-full after:h-0.5 after:bg-primary after:bottom-0 after:left-0 after:scale-x-0 after:origin-left hover:after:scale-x-100 after:transition-transform after:duration-300 hover:scale-105 transition-transform duration-200"
                 >
                   {category.name}
@@ -64,14 +79,14 @@ export function Header() {
           {isAuthenticated ? (
             <>
               <Button variant="ghost" size="sm" asChild>
-                <Link to="/admin" className="hover:scale-105 transition-transform duration-200">
+                <Link to="/admin" className="hover:scale-105 transition-transform duration-200" onClick={scrollToTop}>
                   관리자
                 </Link>
               </Button>
               <Button 
                 variant="ghost" 
                 size="sm"
-                onClick={handleLogout}
+                onClick={handleLogoutClick}
                 className="flex items-center gap-1 hover:scale-105 transition-transform duration-200"
               >
                 <LogOut className="h-4 w-4" />
@@ -80,7 +95,7 @@ export function Header() {
             </>
           ) : (
             <Button variant="ghost" size="sm" asChild>
-              <Link to="/login" className="flex items-center gap-1 hover:scale-105 transition-transform duration-200">
+              <Link to="/login" className="flex items-center gap-1 hover:scale-105 transition-transform duration-200" onClick={scrollToTop}>
                 <LogIn className="h-4 w-4" />
                 로그인
               </Link>
@@ -115,7 +130,7 @@ export function Header() {
                 >
                   <Link 
                     to={category.href}
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={handleLinkClick}
                   >
                     {category.name}
                   </Link>
@@ -125,7 +140,7 @@ export function Header() {
                   key={category.name} 
                   to={category.href}
                   className="text-sm font-medium transition-colors hover:text-primary hover:translate-x-1 transition-transform duration-200"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={handleLinkClick}
                 >
                   {category.name}
                 </Link>

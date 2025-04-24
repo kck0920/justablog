@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/lib/supabase";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Card, CardContent } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 interface FeaturedPost {
   id: string;
@@ -13,6 +14,7 @@ interface FeaturedPost {
   slug: string;
   content: string;
   views: number;
+  thumbnailUrl?: string | null;
 }
 
 // 텍스트만 추출하는 함수 (HTML과 마크다운 태그 제거)
@@ -42,61 +44,56 @@ const calculateReadingTime = (content: string): number => {
   return Math.ceil(words / wordsPerMinute);
 };
 
-async function fetchFeaturedPosts(): Promise<FeaturedPost[]> {
-  const { data, error } = await supabase
-    .from('posts')
-    .select('id, title, content, category, date, slug, views')
-    .eq('status', 'published')
-    .eq('featured', true)
-    .order('date', { ascending: false })
-    .limit(8);
-
-  if (error) {
-    console.error("Error fetching featured posts:", error);
-    throw error;
-  }
-
-  return (data || []).map(post => ({
-    ...post,
-    date: new Date(post.date).toLocaleDateString('ko-KR', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    })
-  }));
-}
+// 기본 플레이스홀더 이미지
+const DEFAULT_PLACEHOLDER = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f0f0f0'/%3E%3Cpath d='M30,40 L70,40 L70,70 L30,70 Z' stroke='%23aaa' fill='none'/%3E%3Cpath d='M40,50 L50,60 L60,50' stroke='%23aaa' fill='none'/%3E%3Ccircle cx='50' cy='35' r='5' fill='%23aaa'/%3E%3C/svg%3E";
 
 export function MainFeaturedPosts() {
   const { data: posts, isLoading, error } = useQuery<FeaturedPost[]>({
-    queryKey: ['mainFeaturedPosts'],
-    queryFn: fetchFeaturedPosts,
-    staleTime: 1000 * 60 * 5,
+    queryKey: ["featuredPosts"],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("posts")
+        .select("id, title, category, created_at, slug, content, views, thumbnail_url")
+        .eq("featured", true)
+        .eq("status", "published")
+        .order("created_at", { ascending: false })
+        .limit(8);
+
+      if (error) {
+        throw error;
+      }
+
+      return data.map(post => ({
+        id: post.id,
+        title: post.title,
+        category: post.category,
+        date: new Date(post.created_at).toLocaleDateString(),
+        slug: post.slug,
+        content: post.content,
+        views: post.views,
+        thumbnailUrl: post.thumbnail_url
+      }));
+    }
   });
 
   if (error) {
-    console.error("Error in MainFeaturedPosts:", error);
+    console.error("Error loading featured posts:", error);
     return null;
   }
 
   return (
-    <section className="py-12 md:py-16">
-      <div className="container-custom">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold tracking-tight">추천 글</h2>
-          <Link 
-            to="/category/all" 
-            className="text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
-            모든 글 보기
-          </Link>
-        </div>
-        
+    <section className="py-8">
+      <div className="container">
+        <h2 className="text-2xl font-bold tracking-tight mb-6">
+          추천 포스트
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {isLoading ? (
             // 로딩 상태 UI
             Array(8).fill(0).map((_, i) => (
               <Card key={i} className="bg-card/50 border shadow-sm hover:shadow-md transition-all duration-200">
                 <CardContent className="p-4 space-y-2">
+                  <Skeleton className="h-40 w-full rounded-md" />
                   <Skeleton className="h-4 w-16" />
                   <Skeleton className="h-6 w-3/4" />
                   <Skeleton className="h-4 w-full" />
@@ -107,31 +104,42 @@ export function MainFeaturedPosts() {
                 </CardContent>
               </Card>
             ))
-          ) : posts?.length === 0 ? (
-            <div className="col-span-full text-center py-4 text-muted-foreground">
-              추천 글이 없습니다.
-            </div>
           ) : (
             posts?.map((post) => (
-              <Link
-                key={post.id}
-                to={`/post/${post.slug}`}
-                className="group"
-              >
-                <Card className="h-full overflow-hidden transition-all hover:shadow-md hover:bg-muted/50 dark:hover:bg-slate-850">
-                  <CardContent className="p-4 space-y-2">
-                    <Badge variant="secondary" className="bg-transparent text-muted-foreground hover:bg-transparent">
+              <Link key={post.id} to={`/post/${post.slug}`}>
+                <Card className="bg-card/50 border shadow-sm hover:shadow-md transition-all duration-200 hover:bg-muted/50 h-full flex flex-col">
+                  <CardContent className="p-4 space-y-2 flex-1 flex flex-col">
+                    <AspectRatio ratio={4/3} className="bg-muted rounded-md overflow-hidden flex-none">
+                      {post.thumbnailUrl ? (
+                        <img 
+                          src={post.thumbnailUrl} 
+                          alt={post.title}
+                          className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
+                          onError={(e) => {
+                            console.error("Image failed to load:", post.thumbnailUrl);
+                            (e.target as HTMLImageElement).src = DEFAULT_PLACEHOLDER;
+                          }}
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center bg-muted">
+                          <span className="text-muted-foreground">No Image</span>
+                        </div>
+                      )}
+                    </AspectRatio>
+                    <Badge variant="outline" className="text-xs flex-none">
                       {post.category}
                     </Badge>
-                    <h3 className="text-xl font-semibold line-clamp-2">
-                      {post.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground line-clamp-2">
-                      {createExcerpt(post.content, 150)}
-                    </p>
-                    <div className="flex items-center justify-between text-sm text-muted-foreground pt-2">
+                    <div className="flex-1 flex flex-col min-h-[120px]">
+                      <h3 className="font-semibold line-clamp-2 mb-2 min-h-[48px]">
+                        {post.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground line-clamp-2 flex-1">
+                        {post.content.replace(/<[^>]*>/g, '')}
+                      </p>
+                    </div>
+                    <div className="flex items-center justify-between text-xs text-muted-foreground flex-none">
                       <span>{post.date}</span>
-                      <span>{calculateReadingTime(post.content)} min read</span>
+                      <span>조회수 {post.views}</span>
                     </div>
                   </CardContent>
                 </Card>

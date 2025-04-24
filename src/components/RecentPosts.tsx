@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/lib/supabase";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Card, CardContent } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 interface RecentPost {
   id: string;
@@ -12,23 +13,12 @@ interface RecentPost {
   date: string;
   slug: string;
   content: string;
+  thumbnailUrl?: string | null;
 }
 
-// 텍스트만 추출하는 함수 (HTML과 마크다운 태그 제거)
-const stripTags = (htmlOrMd: string): string => {
-  // HTML 태그 제거 (개선된 정규식)
-  const withoutHtml = htmlOrMd.replace(/<[^>]*>|<\/[^>]*>/g, ' ');
-  
-  // 마크다운 링크, 헤더, 볼드, 이탤릭 등 제거 (개선된 정규식)
-  const withoutMd = withoutHtml
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // 링크
-    .replace(/[#*_~`]+/g, '') // 헤더, 볼드, 이탤릭, 취소선 등
-    .replace(/\n/g, ' ') // 줄바꿈을 공백으로
-    .replace(/!\[.*?\]\(.*?\)/g, '') // 이미지 마크다운 제거
-    .replace(/```[\s\S]*?```/g, '') // 코드 블록 제거
-    .replace(/\s+/g, ' '); // 여러 공백을 하나로
-
-  return withoutMd.trim();
+// HTML 태그 제거 함수
+const stripTags = (html: string): string => {
+  return html.replace(/<[^>]*>/g, '');
 };
 
 // 발췌문 생성 함수
@@ -53,7 +43,7 @@ async function fetchRecentPosts(): Promise<RecentPost[]> {
 
   const { data, error } = await supabase
     .from('posts')
-    .select('id, title, content, category, date, slug')
+    .select('id, title, content, category, date, slug, thumbnail_url')
     .eq('status', 'published')
     .gte('date', sevenDaysAgoStr)  // 7일 전 이후의 글만 선택
     .order('date', { ascending: false })
@@ -70,7 +60,8 @@ async function fetchRecentPosts(): Promise<RecentPost[]> {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
-    })
+    }),
+    thumbnailUrl: post.thumbnail_url
   }));
 }
 
@@ -99,12 +90,13 @@ export function RecentPosts() {
           </Link>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {isLoading ? (
             // 로딩 상태 UI
             Array(6).fill(0).map((_, i) => (
               <Card key={i} className="bg-card/50 border shadow-sm hover:shadow-md transition-all duration-200">
                 <CardContent className="p-4 space-y-2">
+                  <Skeleton className="w-full h-48 rounded-md" />
                   <Skeleton className="h-4 w-16" />
                   <Skeleton className="h-6 w-3/4" />
                   <Skeleton className="h-4 w-full" />
@@ -115,21 +107,36 @@ export function RecentPosts() {
                 </CardContent>
               </Card>
             ))
-          ) : posts?.length === 0 ? (
+          ) : !posts || posts.length === 0 ? (
             // 데이터가 없을 때 UI
             <div className="col-span-full text-center py-4 text-muted-foreground">
               아직 게시글이 없습니다.
             </div>
           ) : (
             // 게시글 목록 UI
-            posts?.map((post) => (
+            posts.map((post) => (
               <Link
                 key={post.id}
                 to={`/post/${post.slug}`}
                 className="group"
               >
                 <Card className="h-full overflow-hidden transition-all hover:shadow-md hover:bg-muted/50 dark:hover:bg-slate-850">
-                  <CardContent className="p-4 space-y-2">
+                  <CardContent className="p-4 space-y-3">
+                    {post.thumbnailUrl ? (
+                      <AspectRatio ratio={4/3} className="bg-muted rounded-md overflow-hidden">
+                        <img 
+                          src={post.thumbnailUrl} 
+                          alt={post.title}
+                          className="object-cover w-full h-full transition-transform group-hover:scale-105"
+                        />
+                      </AspectRatio>
+                    ) : (
+                      <AspectRatio ratio={4/3} className="bg-muted rounded-md">
+                        <div className="w-full h-full flex items-center justify-center">
+                          <span className="text-muted-foreground">No Image</span>
+                        </div>
+                      </AspectRatio>
+                    )}
                     <Badge variant="secondary" className="bg-transparent text-muted-foreground hover:bg-transparent">
                       {post.category}
                     </Badge>
